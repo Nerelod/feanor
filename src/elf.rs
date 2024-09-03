@@ -15,3 +15,21 @@ pub struct Elf64Ehdr {
     pub e_shnum: u16,
     pub e_shstrndx: u16,
 }
+
+#[derive(Debug)]
+pub enum e_types {
+    ET_NONE,
+    ET_REL,
+    ET_EXEC,
+    ET_DYN,
+    ET_CORE,
+    ET_LOOS,
+    ET_HIOS,
+    ET_LOPROC,
+    ET_HIPROC,
+    undefined,
+}
+
+pub struct silmaril {
+    pub e_type: e_types,
+}

@@ -1,5 +1,6 @@
 mod elf;
 mod parsing;
+mod babel;
 
 use std::path::Path;
 use std::env;
