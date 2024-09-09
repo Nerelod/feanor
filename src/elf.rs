@@ -30,6 +30,27 @@ pub enum e_types {
     undefined,
 }
 
+#[derive(Debug)]
+pub enum e_machines {
+    EM_X86_64,
+    undefined,
+}
+
+#[derive(Debug)]
+pub enum e_flags {
+    EF_SPARCV9_MM,
+    EF_SPARCV9_TSO,
+    EF_SPARCV9_PSO,
+    EF_SPARCV9_RMO,
+    EF_SPARC_LEDATA	,
+    EF_SPARC_EXT_MASK,
+    EF_SPARC_32PLUS,
+    EF_SPARC_SUN_US1,
+    EF_SPARC_HAL_R1,
+    EF_SPARC_SUN_US3,
+    undefined,
+}
+
 pub struct silmaril {
     pub e_type: e_types,
 }

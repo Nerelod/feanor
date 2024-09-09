@@ -13,6 +13,7 @@ fn main() -> std::io::Result<()> {
     let header = read_elf_header(bin)?;
 
     print_elf_header(&header);
+    
 
     Ok(())
 
